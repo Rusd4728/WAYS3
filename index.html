@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAYS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:#000;
+  color:#fff;
+}
+a{text-decoration:none;color:inherit}
+
+section{padding:80px 6vw}
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.hero h1{
+  font-size:clamp(48px,10vw,140px);
+  letter-spacing:10px;
+}
+.hero p{
+  margin-top:20px;
+  letter-spacing:3px;
+  opacity:.7;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:50px;
+}
+
+.card{
+  cursor:pointer;
+  transition:.5s ease;
+}
+.card:hover{transform:translateY(-10px)}
+.image{
+  height:420px;
+  background:#111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.price{
+  margin-top:15px;
+  letter-spacing:2px;
+  opacity:.7;
+}
+
+.story{
+  max-width:900px;
+  line-height:1.7;
+  font-size:18px;
+  opacity:.85;
+}
+
+.telegram{
+  display:inline-block;
+  margin-top:50px;
+  border-bottom:1px solid #fff;
+  letter-spacing:4px;
+}
+
+footer{
+  padding:60px;
+  text-align:center;
+  opacity:.4;
+}
+
+@media(max-width:768px){
+  .image{height:300px}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div>
+    <h1>WAYS</h1>
+    <p>IF YOU ARE HERE — YOU ARE HERE FOR A REASON</p>
+  </div>
+</section>
+
+<section>
+  <h2>PRODUCTS</h2><br><br>
+
+  <div class="products">
+
+    <a class="card" href="product-black-small.html">
+      <div class="image">BLACK / SMALL LOGO</div>
+      <div class="price">$1500</div>
+    </a>
+
+    <a class="card" href="product-white-small.html">
+      <div class="image">WHITE / SMALL LOGO</div>
+      <div class="price">$1500</div>
+    </a>
+
+    <a class="card" href="product-back-logo.html">
+      <div class="image">BACK LARGE LOGO</div>
+      <div class="price">$1500</div>
+    </a>
+
+  </div>
+</section>
+
+<section>
+  <div class="story">
+    WAYS is not fashion for everyone.  
+    It is a closed cultural signal.  
+    Founded by LIL WAYS.  
+    Not clothes — but misunderstood art.
+  </div>
+
+  <a class="telegram" href="https://t.me/+26rvJt3vVv1hN2Zi" target="_blank">
+    PRIVATE ACCESS — TELEGRAM
+  </a>
+</section>
+
+<footer>
+WAYS © PRIVATE FASHION HOUSE
+</footer>
+
+</body>
+</html>
